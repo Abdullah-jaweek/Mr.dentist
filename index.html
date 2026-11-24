@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abdullah-jaweek">
+    <meta name="keyworeds" content="dentist, tooth, teeth, laser cleaning, Dental fillings, root canal treatment, teeth whitening, crown and bridges, veneers, smile makeover, dental implants, orthodontics">
+    <meta name="description" content="This is a simple website written in HTML and CSS. It's not a real appointment-booking site—it's simply a site to showcase my skills in these two languages, especially responsiveness.">
+    <title>Mr. Dentist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="site-layout">
+        <header class="site-header">
+            <nav class="nav-bar">
+                <div class="nav-container">
+                    <a href="#Home" class="brand-logo" aria-label="Mr. Dentist Logo">
+                        <img src="images/Webpage-logo.webp" alt="Mr. Dentist Logo">
+                        <span>Mr. Dentist</span>
+                    </a>
+
+                    <div class="nav-controls">
+                        <select class="mobile-nav-select" aria-label="Jump to section" onchange="if (this.value) location.hash = this.value;">
+                            <option value="#Home">Home</option>
+                            <option value="#Services">Services</option>
+                            <option value="#Clinic-hours">Clinic hours</option>
+                            <option value="#Booking">Booking</option>
+                        </select>
+
+                        <ul class="desktop-nav-links">
+                            <li><a href="#Home">Home</a></li>
+                            <li><a href="#Services">Services</a></li>
+                            <li><a href="#Clinic-hours">Clinic hours</a></li>
+                            <li><a href="#Booking">Booking</a></li>
+                        </ul>
+
+                        <div class="search-box">
+                            <input type="search" class="search-input" aria-label="Search in page" placeholder="Search...">
+                            <i class="bi bi-search search-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main-section">
+            <div class="hero-cta-bar">
+                <a href="#Booking" class="hero-book-link">Book now</a>
+            </div>
+
+            <section id="Home" class="sub-section home-section">
+                <div class="home-content">
+                    <h1>Modern Dentistry for a Confident Smile</h1>
+                    <h2>Expert dental care tailored for your whole family. From gentle routine checkups and preventive maintenance to advanced cosmetic makeovers, whitening, and implants—we combine modern technology with a comfortable, pain-free experience to keep your smile healthy and bright</h2>
+                    <h3>
+                        <ul>
+                            <li><i class="bi bi-check2-circle"></i> Comprehensive Family Dentistry</li>
+                            <li><i class="bi bi-shield-check"></i> Advanced Technology &amp; Safe Sterilization</li>
+                            <li><i class="bi bi-heart-pulse"></i> Pain-Free &amp; Comfortable Care</li>
+                        </ul>
+                    </h3>
+                </div>
+            </section>
+
+            <section id="Services" class="sub-section services-section">
+                <h2>This clinic offers a wide range of services for dental health, aesthetics, and whitening. Here is a summary of these services along with their prices</h2>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <img src="images/images.jpg"  alt="laser-cleaning-image">
+                        <h3 class="service-name">Laser Cleaning</h3>
+                        <p class="service-details">Gentle plaque and stain removal with polishing to protect gums and leave teeth fresh.</p>
+                        <span class="card-price">$20</span>
+                    </article>
+
+                    <article class="service-card">
+                        <img src="images/dental-filling.jpg"  alt="dental-filling-image">
+                        <h3 class="service-name">Dental Fillings</h3>
+                        <p class="service-details">Cavity treatment and tooth restoration using durable fillings that match your natural tooth.</p>
+                        <span class="card-price">$25</span>
+                    </article>
+
+                    <article class="service-card">
+                        <img src="images/Root-Canal-Treatment.jpg" alt="Root-Canal-Treatment-image">
+                        <h3 class="service-name">Root Canal Treatment</h3>
+                        <p class="service-details">Precise cleaning and relief of infected tooth roots to save natural teeth comfortably.</p>
+                        <span class="card-price">$40</span>
+                    </article>
+
+                    <article class="service-card">
+                        <img src="images/Teeth-Whitening.jpg" alt="Teeth-Whitening-image">
+                        <h3 class="service-name">Teeth Whitening</h3>
+                        <p class="service-details">Safe brightening treatments to lift stains and reveal a naturally radiant smile.</p>
+                        <span class="card-price">$55</span>
+                    </article>
+
+                    <article class="service-card">
+                        <img src="images/Crowns-and-bridges.jpg" alt="Crowns-abd-bridges-image">
+                        <h3 class="service-name">Crowns &amp; Bridges</h3>
+                        <p class="service-details">Custom fixed restorations that protect weak teeth or replace missing ones naturally.</p>
+                        <span class="card-price">$60</span>
+                    </article>
+
+                    <article class="service-card">
+                        <img src="images/Veneers-Smile Makeover.jpg" alt="Veneers-Smile Makeover-image">
+                        <h3 class="service-name">Veneers / Smile Makeover</h3>
+                        <p class="service-details">Thin ceramic shells crafted to enhance tooth color, shape, and overall smile symmetry.</p>
+                        <span class="card-price">$90</span>
+                    </article>
+
+                    <article class="service-card">
+                        <img src="images/Dental-Implants.jpg" alt="DentalImplants-image">
+                        <h3 class="service-name">Dental Implants</h3>
+                        <p class="service-details">Sturdy artificial roots replacing missing teeth for lasting strength and natural function.</p>
+                        <span class="card-price">$300</span>
+                    </article>
+
+                    <article class="service-card">
+                        <img src="images/Orthodontics.jpg" alt="Orthodontics-image">
+                        <h3 class="service-name">Orthodontics</h3>
+                        <p class="service-details">Gradual tooth and bite alignment for a straighter, healthier, well-balanced smile.</p>
+                        <span class="card-price">$500</span>
+                    </article>
+                </div>
+            </section>
+
+            <section id="Clinic-hours" class="sub-section schedule-section">
+                <h2>The following schedule outlines the clinic's operating hours for visits, inquiries, and bookings</h2>
+                <div class="table-box">
+                    <table class="clinic-table">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Open</th>
+                                <th>Rest</th>
+                                <th>Close</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>12 PM</td>
+                                <td>4 to 5</td>
+                                <td>10 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>11 AM</td>
+                                <td>3 to 4</td>
+                                <td>5 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>8 AM</td>
+                                <td>12 to 1</td>
+                                <td>3 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td></td>
+                                <td>closed</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>10 AM</td>
+                                <td>--</td>
+                                <td>4 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td></td>
+                                <td>closed</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>9 AM</td>
+                                <td>12 to 1</td>
+                                <td>4 PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="Booking" class="sub-section booking-section">
+                <form action="#" method="post" class="circular-booking-form" onsubmit="event.preventDefault(); alert('Appointment booked successfully! Check your email to see your appointment.');">
+                    <div class="form-field">
+                        <input type="text" name="fullName" placeholder="Full Name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="age-gender-row">
+                        <input type="number" name="age" min="1" max="120" placeholder="Age" required>
+                        <div class="gender-options">
+                            <label><input type="radio" name="gender" value="Male" required> Male</label>
+                            <label><input type="radio" name="gender" value="Female" required> Female</label>
+                        </div>
+                    </div>
+
+                    <details class="services-select-box">
+                        <summary>Select Services (1 or more)</summary>
+                        <div class="services-checkbox-list">
+                            <label><input type="checkbox" name="services" value="Laser Cleaning ($20)"> Laser Cleaning ($20)</label>
+                            <label><input type="checkbox" name="services" value="Dental Fillings ($25)"> Dental Fillings ($25)</label>
+                            <label><input type="checkbox" name="services" value="Root Canal Treatment ($40)"> Root Canal Treatment ($40)</label>
+                            <label><input type="checkbox" name="services" value="Teeth Whitening ($55)"> Teeth Whitening ($55)</label>
+                            <label><input type="checkbox" name="services" value="Crowns & Bridges ($60)"> Crowns &amp; Bridges ($60)</label>
+                            <label><input type="checkbox" name="services" value="Veneers / Smile Makeover ($90)"> Veneers / Smile Makeover ($90)</label>
+                            <label><input type="checkbox" name="services" value="Dental Implants ($300)"> Dental Implants ($300)</label>
+                            <label><input type="checkbox" name="services" value="Orthodontics ($500)"> Orthodontics ($500)</label>
+                        </div>
+                    </details>
+
+                    <button type="submit" class="submit-btn">Booking</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Mr. Dentist. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
